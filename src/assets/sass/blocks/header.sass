@@ -1,11 +1,21 @@
 .header
+    position: relative
     &__slider-item
         height: 100vh
         background: url("../img/main-bg.jpg") center (center/cover) no-repeat
         position: relative
-
+    &__map
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 3
+    &__arrows
+        position: absolute
+        left: 210px
+        bottom: 40px
+        z-index: 1
     &__aside
-        height: 100vh
+        height: 100%
         position: absolute
         top: 0
         left: 0
@@ -81,3 +91,11 @@
     &__name
         font-weight: 300
         line-height: 19px
+.line-animation
+    stroke-dashoffset: 600
+    stroke-dasharray: 600
+    animation: animdash 3s infinite 6s
+
+@keyframes animdash
+    to
+        stroke-dashoffset: 0
