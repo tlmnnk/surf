@@ -102,13 +102,6 @@
 }
 
 /* Default styles */
-body {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-}
-
 /* Blocks */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -453,6 +446,25 @@ template {
     display: none;
 }
 
+*::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #171919;
+    text-transform: uppercase;
+}
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -464,7 +476,12 @@ ul, li {
     list-style: none;
 }
 
-.subtitle-left {
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.headline-left {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
@@ -476,7 +493,7 @@ ul, li {
     display: inline-block;
 }
 
-.subtitle-left:before {
+.headline-left:before {
     content: "";
     position: absolute;
     width: 80px;
@@ -615,6 +632,7 @@ ul, li {
     letter-spacing: 3px;
     padding-top: 6px;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
 
 .header__search {
@@ -646,6 +664,7 @@ ul, li {
     letter-spacing: 1.05px;
     position: relative;
     padding-left: 19px;
+    text-transform: capitalize;
 }
 
 .header__location:before {
@@ -656,4 +675,65 @@ ul, li {
     background-image: url("../img/tag.svg");
     left: 0;
     top: 0;
+}
+
+.surf {
+    padding: 160px 0 210px;
+    background: url("../img/poi-bg.svg") right 200px no-repeat;
+    background-size: auto;
+}
+
+.surf__subtitle {
+    text-align: right;
+    padding-right: 80px;
+    margin-top: -86px;
+}
+
+.surf-box {
+    min-height: 750px;
+}
+
+.title span {
+    font-weight: 800;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.02);
+    position: relative;
+    -webkit-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    transform: translateX(-50px);
+    display: inline-block;
+}
+
+.title h3 {
+    margin: 0;
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+.title h3:after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #4AF6CD;
+}
+
+.subtitle {
+    display: inline-block;
+    text-align: right;
+}
+
+.subtitle__head {
+    padding-right: 10px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.subtitle__head span {
+    font-weight: 100;
 }
