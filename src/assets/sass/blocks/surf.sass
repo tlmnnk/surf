@@ -64,3 +64,83 @@
                 left: 0
                 right: 0
                 display: none
+.slider-map
+    max-width: 1200px
+    min-height: 635px
+    background: url('../img/world-map-dots.png') center (center/cover) no-repeat
+    margin: 0 auto
+    .slick-list
+        min-height: 635px
+    .slick-current
+        .slider-dots__circle-content
+            display: block
+            width: 285px
+            padding: 28px 31px 31px 32px
+
+
+.slider-dots
+    position: relative
+    &__content
+        &-row
+            display: flex
+            justify-content: space-between
+        &-title
+            font-weight: 800
+            font-size: 18px
+            line-height: 26px
+            padding-bottom: 8px
+            margin-bottom: 8px
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                background-color: $green
+                width: 80px
+                height: 1px
+                bottom: 0
+                left: 0
+        &-subtitle
+            font-size: 16px
+            line-height: 19px
+            text-transform: capitalize
+    &__circle
+        width: 24px
+        height: 24px
+        background-color: $green
+        border-radius: 50%
+    &__circle-content
+        display: none
+
+    &--1
+        top: 350px
+    &--2
+        top: 305px
+        .slider-dots__circle
+            position: relative
+            &:before
+                content: ''
+                background-image: url('../img/mini-marker.png')
+                position: absolute
+                top: -25px
+                right: -25px
+                width: 14px
+                height: 17px
+                background-size: cover
+    &--3
+        top: 310px
+        left: 20px
+    &--4
+        top: 500px
+        left: -40px
+    &--5
+        top: 220px
+        left: -70px
+    &--6
+        top: 540px
+        left: -100px
+    &--7
+        top: 380px
+        left: -100px
+    &--8
+        top: 500px
+        left: 40px

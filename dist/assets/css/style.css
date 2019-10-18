@@ -771,6 +771,125 @@ ul, li {
     display: none;
 }
 
+.slider-map {
+    max-width: 1200px;
+    min-height: 635px;
+    background: url("../img/world-map-dots.png") center center/cover no-repeat;
+    margin: 0 auto;
+}
+
+.slider-map .slick-list {
+    min-height: 635px;
+}
+
+.slider-map .slick-current .slider-dots__circle-content {
+    display: block;
+    width: 285px;
+    padding: 28px 31px 31px 32px;
+}
+
+.slider-dots {
+    position: relative;
+}
+
+.slider-dots__content-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.slider-dots__content-title {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.slider-dots__content-title:before {
+    content: '';
+    position: absolute;
+    background-color: #4AF6CD;
+    width: 80px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+
+.slider-dots__content-subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.slider-dots__circle {
+    width: 24px;
+    height: 24px;
+    background-color: #4AF6CD;
+    border-radius: 50%;
+}
+
+.slider-dots__circle-content {
+    display: none;
+}
+
+.slider-dots--1 {
+    top: 350px;
+}
+
+.slider-dots--2 {
+    top: 305px;
+}
+
+.slider-dots--2 .slider-dots__circle {
+    position: relative;
+}
+
+.slider-dots--2 .slider-dots__circle:before {
+    content: '';
+    background-image: url("../img/mini-marker.png");
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 14px;
+    height: 17px;
+    background-size: cover;
+}
+
+.slider-dots--3 {
+    top: 310px;
+    left: 20px;
+}
+
+.slider-dots--4 {
+    top: 500px;
+    left: -40px;
+}
+
+.slider-dots--5 {
+    top: 220px;
+    left: -70px;
+}
+
+.slider-dots--6 {
+    top: 540px;
+    left: -100px;
+}
+
+.slider-dots--7 {
+    top: 380px;
+    left: -100px;
+}
+
+.slider-dots--8 {
+    top: 500px;
+    left: 40px;
+}
+
 .title span {
     font-weight: 800;
     font-size: 200px;

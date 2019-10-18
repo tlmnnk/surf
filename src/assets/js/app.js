@@ -21,7 +21,15 @@ $(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="assets/img/arrow-left.svg">',
-        nextArrow: '<img class="slider-arrows slider-arrows__right" src="assets/img/arrow-right.svg">'
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="assets/img/arrow-right.svg">',
+        asNavFor: '.slider-map'
+    });
+
+    $('.slider-map').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.surf-slider'
 
     });
 });
