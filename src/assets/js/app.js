@@ -29,7 +29,7 @@ $(function(){
         slidesToShow: 8,
         slidesToScroll: 1,
         arrows: false,
-        asNavFor: '.surf-slider'
-
+        asNavFor: '.surf-slider',
+        focusOnSelect: true
     });
 });
